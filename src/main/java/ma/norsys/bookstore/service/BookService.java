@@ -9,6 +9,8 @@ public interface BookService {
 
     void deleteBook(int id);
 
+    Book updateBook(Book book);
+
     Book getBookById(int id);
 
     List<Book> getAllBook();
@@ -17,5 +19,5 @@ public interface BookService {
 
     List<Book> getBookByCategory(String category);
 
-    List<Book> getBookByNameAndCategory(String name, String category);
+    List<Book> getBookByAuthor(String author);
 }
